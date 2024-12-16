@@ -76,6 +76,8 @@ All these values have been ignored while calculating average rating for each of 
 
 (a)  In the report view, under the insert tab, a text box was added to the canvas, a short description of customer churn was written.
 
+Snap
+
 (b)  Calculated column was created in which, payment method were grouped into various groups.
 
   For creating new column following DAX expression was written;
@@ -89,8 +91,13 @@ All these values have been ignored while calculating average rating for each of 
         'Branch_research'[payment method] = "express credit", "Cash",
     
     )
+
     
-(c)  Another coulumn was created for Sol_ID.
+Snap of new calculated column 
+
+![pay_meth](https://github.com/user-attachments/assets/1fe83ccc-31fa-469f-b157-ec76fb6572fc)
+
+(c)  Another column was created for Sol_ID.
 
 For creating new column following DAX expression was written;
 
@@ -101,8 +108,13 @@ For creating new column following DAX expression was written;
     "short", 
     "long"
     )
+
     
-(d)  Another coulumn was created for Channel_ID.
+Snap of new calculated column 
+
+![tenu](https://github.com/user-attachments/assets/9dfa4a6f-afbf-48c5-915b-b964ccdd5ad7)
+
+(d)  Another column was created for Channel_ID.
 
 For creating new column following DAX expression was written;
 
@@ -117,6 +129,7 @@ For creating new column following DAX expression was written;
     )
 
 
+
 (e) Another coulumn was created for Account Balance
 
 For creating new column following DAX expression was written;
@@ -128,10 +141,12 @@ For creating new column following DAX expression was written;
     "yes", 
     "no"
     )
-    
+
 Snap of new calculated column 
 
-Snap_1
+![acctb_churn](https://github.com/user-attachments/assets/6ce5f7a1-dbd5-47a8-b9b4-4833b26582d6)
+
+
 
 (13)  New measure was created to find total count of customers.
 
@@ -142,7 +157,9 @@ Following DAX expression was written for the same,
     
 A card visual was used to represent total no of customers.
 
-Snap_Count
+
+![Total no  Cus](https://github.com/user-attachments/assets/8b96474f-a5fb-4ef6-947c-b2f1eda595f7)
+
 
 (14)  New measure was created to find % of Bank.
 
@@ -193,6 +210,10 @@ Following DAX expression was written to find total no of churned customers,
 
     Total churned cus = CALCULATE([Total no of customers], 'Export'[Churn] = "Yes")
 
+Snap
+
+![Total no  churn](https://github.com/user-attachments/assets/61d5fb9a-674a-4954-9f8d-48ff76b7011b)
+
 (22)  New measure was created to find total no of Bank method. 
 
 Following DAX expression was written to find total no of Bank method,
@@ -235,9 +256,21 @@ Following DAX expression was written to find total no of males,
 
     Total no of Males = CALCULATE([Total no of customers], 'Export'[GENDER] = "M")
 
-Snap_Percentage
+## Snap of each page
+
+Home page
 
 
+![Home page](https://github.com/user-attachments/assets/57d54d3f-3aed-4a51-be55-44f66581d428)
+
+Customers page
+
+![All customers](https://github.com/user-attachments/assets/1738ef79-5e79-4bb3-bed9-a6cd1b473cfc)
+
+Churned page
+
+
+![Churned cus](https://github.com/user-attachments/assets/1b2b0305-a392-41de-9be8-128c655f5a3b)
 
 ### Results
 
